@@ -16,7 +16,9 @@ export default function AnalyticsTracker() {
         });
 
         // Track page view
-        const pageName = pathname === '/' ? 'Home' : pathname.split('/').pop()?.charAt(0).toUpperCase() + pathname.split('/').pop()?.slice(1) || 'Unknown';
+        const pathParts = pathname.split('/');
+        const lastPart = pathParts[pathParts.length - 1] || '';
+        const pageName = pathname === '/' ? 'Home' : (lastPart ? lastPart.charAt(0).toUpperCase() + lastPart.slice(1) : 'Unknown');
         await fetch('/api/analytics/pageview', {
           method: 'POST',
           headers: {

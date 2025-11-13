@@ -31,9 +31,15 @@ yarn-error.log*
 # vercel
 .vercel
 
+# netlify
+.netlify/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
 
 # data directory (contains JSON files with content)
 /data/
+
+# deno
+deno.lock

@@ -84,7 +84,7 @@ export default function TeamPage() {
         ? await fetch('/api/content/team', {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ id: editing, ...memberData }),
+            body: JSON.stringify({ ...memberData, id: editing }),
           })
         : await fetch('/api/content/team', {
             method: 'POST',
