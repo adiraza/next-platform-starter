@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import Header from "@/components/Header";
+import ConditionalLayout from "@/components/ConditionalLayout";
+import AnalyticsTracker from "@/components/AnalyticsTracker";
 
 export const metadata: Metadata = {
   title: "Excel Energy | Solar Solutions",
@@ -15,11 +16,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {/* Header stays globally */}
-        <Header />
-
-        {/* Main page content */}
-        <main>{children}</main>
+        {/* Analytics Tracker */}
+        <AnalyticsTracker />
+        
+        {/* Conditional Layout - Header only on non-admin pages */}
+        <ConditionalLayout>
+          {children}
+        </ConditionalLayout>
       </body>
     </html>
   );
