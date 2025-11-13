@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+/* ---------- Solar Energy Theme Colors ---------- */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --solar-yellow: #fbbf24;
+  --solar-orange: #f97316;
+  --solar-green: #10b981;
+  --solar-blue: #3b82f6;
+  --solar-gradient: linear-gradient(135deg, #fbbf24 0%, #10b981 50%, #3b82f6 100%);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: 'Poppins', 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Inter', monospace;
+}
+
+/* ---------- Base Body Styles ---------- */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Poppins', 'Inter', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------- Solar Energy Animations ---------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradient {
+
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(251, 191, 36, 0.5);
+  }
+
+  50% {
+    box-shadow: 0 0 40px rgba(251, 191, 36, 0.8);
+  }
+}
+
+@keyframes rotate-sun {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 5s ease infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-rotate-sun {
+  animation: rotate-sun 20s linear infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.4),
+      transparent);
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* ---------- Delay Variants ---------- */
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+}
+
+.delay-600 {
+  animation-delay: 0.6s;
+}
+
+/* ---------- Background Transition ---------- */
+.bg-transition {
+  transition: background-image 1s ease-in-out;
+}
+
+/* ---------- Smooth Scroll ---------- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---------- Solar Energy Gradient Text ---------- */
+.gradient-text {
+  background: linear-gradient(135deg, #fbbf24 0%, #10b981 50%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 200% 200%;
+  animation: gradient 5s ease infinite;
+}
+
+/* ---------- Glass Morphism Effect ---------- */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ---------- Solar Glow Effect ---------- */
+.solar-glow {
+  box-shadow: 0 0 20px rgba(251, 191, 36, 0.3),
+    0 0 40px rgba(16, 185, 129, 0.2),
+    0 0 60px rgba(59, 130, 246, 0.1);
+}
+
+/* ---------- Hover Effects ---------- */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.liquid-section {
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle at top left, rgba(59, 130, 246, 0.18), transparent 55%),
+    radial-gradient(circle at top right, rgba(14, 165, 233, 0.2), transparent 45%),
+    radial-gradient(circle at bottom left, rgba(2, 132, 199, 0.15), transparent 50%),
+    linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(15, 118, 110, 0.8) 50%, rgba(234, 179, 8, 0.75));
+}
+
+.liquid-section::before,
+.liquid-section::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(100px);
+  opacity: 0.6;
+  animation: float 12s ease-in-out infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.liquid-section::before {
+  width: 35rem;
+  height: 35rem;
+  top: -10rem;
+  right: -8rem;
+  background: radial-gradient(circle, rgba(250, 204, 21, 0.35), rgba(16, 185, 129, 0.2));
+  z-index: 0;
+}
+
+.liquid-section::after {
+  width: 28rem;
+  height: 28rem;
+  bottom: -12rem;
+  left: -6rem;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.35), rgba(59, 130, 246, 0.25));
+  animation-delay: 4s;
+  z-index: 0;
+}
+
+.liquid-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.75), rgba(14, 165, 233, 0.18));
+  box-shadow: 0 20px 45px rgba(15, 118, 110, 0.25);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  z-index: 100;
+}
+
+.liquid-card::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background: radial-gradient(circle, rgba(250, 204, 21, 0.25), transparent 65%);
+  transform: translate3d(0, 0, 0) rotate(0deg);
+  animation: rotate-sun 25s linear infinite;
+}
+
+.liquid-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 60px rgba(59, 130, 246, 0.35);
+}
+
+.liquid-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+}
+
+.liquid-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.4rem 1.2rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: rgba(224, 242, 254, 0.9);
+}
+
+.liquid-heading {
+  background: linear-gradient(135deg, #fbbf24 0%, #10b981 45%, #38bdf8 85%, #2563eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 10px 40px rgba(14, 165, 233, 0.4);
+}
+
+.liquid-subheading {
+  color: rgba(224, 242, 254, 0.85);
+}
+
+/* ---------- Responsive Fix ---------- */
+header {
+  min-height: 60vh;
+}
+
+/* ---------- Typography Enhancements ---------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+/* ---------- Custom Scrollbar ---------- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #fbbf24, #10b981);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #f59e0b, #059669);
+}
+
+@media (max-width: 768px) {
+  header {
+    min-height: 80vh;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
