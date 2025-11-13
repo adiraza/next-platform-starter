@@ -24,15 +24,8 @@ export async function POST(request: NextRequest) {
     doc.text('Thank you for your interest in Excel Energy!', 20, 150);
     doc.text('We will contact you soon with a detailed proposal.', 20, 160);
 
-    const pdfBlob = doc.output('blob');
-    const pdfBase64 = await new Promise<string>((resolve) => {
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        const base64 = (reader.result as string).split(',')[1];
-        resolve(base64);
-      };
-      reader.readAsDataURL(pdfBlob);
-    });
+    // Generate PDF as base64 (server-side compatible)
+    const pdfBase64 = doc.output('datauristring').split(',')[1];
 
     // Save quote to database
     const pdfPath = `quotes/quote-${Date.now()}.pdf`;
