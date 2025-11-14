@@ -302,7 +302,7 @@ export default function SettingsPage() {
               <label className="block text-sm font-medium text-cyan-200/80 mb-2">Email</label>
               <input
                 type="email"
-                defaultValue="admin@excelenergy.in"
+                defaultValue="admin@axelenergy.in"
                 disabled
                 className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-xl text-white/50 cursor-not-allowed"
               />

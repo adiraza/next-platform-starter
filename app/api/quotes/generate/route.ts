@@ -10,7 +10,7 @@ export async function POST(request: NextRequest) {
     // Generate PDF
     const doc = new jsPDF();
     doc.setFontSize(20);
-    doc.text('Excel Energy - Solar Quote', 20, 20);
+    doc.text('Axel Energy - Solar Quote', 20, 20);
     doc.setFontSize(12);
     doc.text(`Generated for: ${name}`, 20, 40);
     if (email) doc.text(`Email: ${email}`, 20, 50);
@@ -21,7 +21,7 @@ export async function POST(request: NextRequest) {
     const splitRequirements = doc.splitTextToSize(requirements || 'N/A', 170);
     doc.text(splitRequirements, 20, 95);
     doc.text(`Generated on: ${new Date().toLocaleDateString()}`, 20, 140);
-    doc.text('Thank you for your interest in Excel Energy!', 20, 150);
+    doc.text('Thank you for your interest in Axel Energy!', 20, 150);
     doc.text('We will contact you soon with a detailed proposal.', 20, 160);
 
     // Generate PDF as base64 (server-side compatible)

@@ -48,7 +48,7 @@ export default function ContactMapSection() {
                 <Marker position={center}>
                     <Popup>
                         <div className="text-center">
-                            <strong className="text-green-600 font-bold">Excel Energy</strong>
+                            <strong className="text-green-600 font-bold">Axel Energy</strong>
                             <br />
                             Solar Heights, Sector 62
                             <br />

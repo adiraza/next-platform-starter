@@ -56,11 +56,11 @@ export default function SocialMediaPage() {
   }
 
   const socialLinks = [
-    { key: 'facebook', label: 'Facebook', icon: Facebook, placeholder: 'https://facebook.com/excelenergy' },
-    { key: 'twitter', label: 'Twitter', icon: Twitter, placeholder: 'https://twitter.com/excelenergy' },
-    { key: 'linkedin', label: 'LinkedIn', icon: Linkedin, placeholder: 'https://linkedin.com/company/excelenergy' },
-    { key: 'instagram', label: 'Instagram', icon: Instagram, placeholder: 'https://instagram.com/excelenergy' },
-    { key: 'youtube', label: 'YouTube', icon: Youtube, placeholder: 'https://youtube.com/@excelenergy' },
+    { key: 'facebook', label: 'Facebook', icon: Facebook, placeholder: 'https://facebook.com/axelenergy' },
+    { key: 'twitter', label: 'Twitter', icon: Twitter, placeholder: 'https://twitter.com/axelenergy' },
+    { key: 'linkedin', label: 'LinkedIn', icon: Linkedin, placeholder: 'https://linkedin.com/company/axelenergy' },
+    { key: 'instagram', label: 'Instagram', icon: Instagram, placeholder: 'https://instagram.com/axelenergy' },
+    { key: 'youtube', label: 'YouTube', icon: Youtube, placeholder: 'https://youtube.com/@axelenergy' },
     { key: 'whatsapp', label: 'WhatsApp', icon: MessageCircle, placeholder: '+91 9876543210' },
   ];
 

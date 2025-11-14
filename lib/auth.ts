@@ -17,7 +17,7 @@ export interface AdminUser {
 let defaultAdmin: AdminUser = {
   id: '1',
   username: 'admin',
-  email: 'admin@excelenergy.in',
+  email: 'admin@axelenergy.in',
   password: '$2b$10$zqYvknFwGXkHcpFZrApIKuPdQ7mOF58d3gBv3Ke/xJwyXu9ZlCrBm', // 'admin123' hashed
 };
 

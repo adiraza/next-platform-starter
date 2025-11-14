@@ -66,7 +66,7 @@ export default function EnhancedHomeSection() {
                 hero: {
                     badge: "Aqua Solar",
                     title: "Dive into the Future of Clean Solar Energy",
-                    description: "Fluid design. Powerful technology. Excel Energy delivers seamless solar ecosystems that ripple out cleaner, smarter power for communities across India.",
+                    description: "Fluid design. Powerful technology. Axel Energy delivers seamless solar ecosystems that ripple out cleaner, smarter power for communities across India.",
                     ctaPrimary: { text: "Explore Liquid Services", link: "/services" },
                     ctaSecondary: { text: "Start a Flow Consultation", link: "/contact" }
                 },

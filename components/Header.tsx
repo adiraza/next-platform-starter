@@ -31,7 +31,7 @@ const Header: React.FC = () => {
                             <Droplet className="h-6 w-6 text-slate-900" />
                         </div>
                         <span className="text-2xl font-bold tracking-wide">
-                            Excel<span className="text-yellow-300">Energy</span>
+                            Axel <span className="text-yellow-300">Energy</span>
                         </span>
                     </div>
 

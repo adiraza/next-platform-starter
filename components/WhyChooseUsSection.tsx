@@ -72,7 +72,7 @@ export default function WhyChooseUsSection() {
                     className="mb-16 text-center space-y-4"
                     style={{ position: 'relative', zIndex: 51 }}
                 >
-                    <span className="liquid-badge">Why Excel Energy</span>
+                    <span className="liquid-badge">Why Axel Energy</span>
                     <h2 className="liquid-heading text-4xl md:text-5xl font-bold">
                         Crafted for Flow, Built for Brilliance
                     </h2>

@@ -130,7 +130,7 @@ export function initializeDefaultData() {
       department: 'Executive',
       level: 'ceo',
       photo: '/image/Image1.jpg',
-      email: 'rajesh.kumar@excelenergy.in',
+      email: 'rajesh.kumar@axelenergy.in',
       phone: '+91 9876543210',
       bio: 'Visionary leader with 20+ years of experience in renewable energy sector.',
       experience: '20+ Years',
@@ -147,7 +147,7 @@ export function initializeDefaultData() {
       department: 'Operations',
       level: 'director',
       photo: '/image/Image2.jpg',
-      email: 'priya.sharma@excelenergy.in',
+      email: 'priya.sharma@axelenergy.in',
       phone: '+91 9876543211',
       bio: 'Operations expert ensuring seamless project execution.',
       experience: '15+ Years',
@@ -159,7 +159,7 @@ export function initializeDefaultData() {
     hero: {
       badge: 'Aqua Solar',
       title: 'Dive into the Future of Clean Solar Energy',
-      description: 'Fluid design. Powerful technology. Excel Energy delivers seamless solar ecosystems that ripple out cleaner, smarter power for communities across India.',
+      description: 'Fluid design. Powerful technology. Axel Energy delivers seamless solar ecosystems that ripple out cleaner, smarter power for communities across India.',
       ctaPrimary: { text: 'Explore Liquid Services', link: '/services' },
       ctaSecondary: { text: 'Start a Flow Consultation', link: '/contact' },
     },
@@ -191,7 +191,7 @@ export function initializeDefaultData() {
     contactInfo: {
       address: 'Solar Heights, Sector 62, Noida, UP, India',
       phone: '+91 9876543210',
-      email: 'info@excelenergy.in',
+      email: 'info@axelenergy.in',
     },
     locations: [
       { id: '1', name: 'Delhi', address: 'Delhi, India', latitude: 28.6139, longitude: 77.2090 },

@@ -307,7 +307,7 @@ export default function ServicesSection() {
                                 Call Us: +91 9123255388
                             </a>
                             <a
-                                href="mailto:contact@excelenergy.in"
+                                href="mailto:contact@axelenergy.in"
                                 className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-6 py-3 font-semibold text-white transition hover:bg-white/15"
                             >
                                 <Mail className="h-5 w-5" />

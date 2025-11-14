@@ -105,7 +105,7 @@ export default function SEOPage() {
             value={seo.siteTitle}
             onChange={(e) => setSeo({ ...seo, siteTitle: e.target.value })}
             className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-cyan-400"
-            placeholder="Excel Energy | Solar Solutions"
+            placeholder="Axel Energy | Solar Solutions"
           />
         </div>
 
@@ -180,7 +180,7 @@ export default function SEOPage() {
               value={seo.twitterHandle || ''}
               onChange={(e) => setSeo({ ...seo, twitterHandle: e.target.value })}
               className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-cyan-400"
-              placeholder="@excelenergy"
+              placeholder="@axelenergy"
             />
           </div>
           <div>

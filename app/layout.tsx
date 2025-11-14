@@ -4,7 +4,7 @@ import ConditionalLayout from "@/components/ConditionalLayout";
 import AnalyticsTracker from "@/components/AnalyticsTracker";
 
 export const metadata: Metadata = {
-  title: "Excel Energy | Solar Solutions",
+  title: "Axel Energy | Solar Solutions",
   description: "Powering a greener future with sustainable solar energy systems.",
 };
 

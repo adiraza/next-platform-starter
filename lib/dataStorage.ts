@@ -68,7 +68,7 @@ export function getHomeContent(): HomeContent {
     hero: {
       badge: "Aqua Solar",
       title: "Dive into the Future of Clean Solar Energy",
-      description: "Fluid design. Powerful technology. Excel Energy delivers seamless solar ecosystems that ripple out cleaner, smarter power for communities across India.",
+      description: "Fluid design. Powerful technology. Axel Energy delivers seamless solar ecosystems that ripple out cleaner, smarter power for communities across India.",
       ctaPrimary: { text: "Explore Liquid Services", link: "/services" },
       ctaSecondary: { text: "Start a Flow Consultation", link: "/contact" }
     },
@@ -106,7 +106,7 @@ export function getAboutContent(): AboutContent {
     contactInfo: {
       address: "Solar Heights, Sector 62, Noida, UP, India",
       phone: "+91 9876543210",
-      email: "info@excelenergy.in"
+      email: "info@axelenergy.in"
     },
     locations: [
       { id: '1', name: 'Delhi', address: 'Delhi, India', latitude: 28.6139, longitude: 77.2090 },
@@ -223,7 +223,7 @@ export function saveSocialMedia(social: SocialMedia): void {
 // SEO Settings
 export function getSEOSettings(): SEOSettings {
   return readJsonFile('seo.json', {
-    siteTitle: 'Excel Energy | Solar Solutions',
+    siteTitle: 'Axel Energy | Solar Solutions',
     siteDescription: 'Powering a greener future with sustainable solar energy systems.',
     keywords: ['solar energy', 'renewable energy', 'solar panels', 'solar installation'],
     ogImage: '',
@@ -240,14 +240,14 @@ export function saveSEOSettings(seo: SEOSettings): void {
 // Site Settings
 export function getSiteSettings(): SiteSettings {
   return readJsonFile('siteSettings.json', {
-    siteName: 'Excel Energy',
+    siteName: 'Axel Energy',
     logo: '',
     favicon: '',
-    contactEmail: 'info@excelenergy.in',
+    contactEmail: 'info@axelenergy.in',
     contactPhone: '+91 9876543210',
     address: 'Solar Heights, Sector 62, Noida, UP, India',
     workingHours: 'Monday - Friday: 9:00 AM - 6:00 PM',
-    footerText: '© 2024 Excel Energy. All rights reserved.',
+    footerText: '© 2024 Axel Energy. All rights reserved.',
     socialMedia: getSocialMedia(),
     seo: getSEOSettings(),
   });

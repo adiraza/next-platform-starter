@@ -52,7 +52,7 @@ export default function AboutPageEditor() {
         `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}&limit=1`,
         {
           headers: {
-            'User-Agent': 'ExcelEnergy-Admin/1.0'
+            'User-Agent': 'AxelEnergy-Admin/1.0'
           }
         }
       );

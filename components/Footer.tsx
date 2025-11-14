@@ -15,7 +15,7 @@ export default function Footer() {
             <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 py-16 md:grid-cols-4">
                 <div className="liquid-card p-6">
                     <div className="relative z-10 space-y-4">
-                        <h2 className="text-2xl font-bold text-white">Excel Energy</h2>
+                        <h2 className="text-2xl font-bold text-white">Axel Energy</h2>
                         <p className="text-sm leading-relaxed text-cyan-100/80">
                             Sculpting immersive solar ecosystems that flow like water and radiate like sunlight. We engineer luminous energy journeys for industries, homes, and communities.
                         </p>
@@ -59,7 +59,7 @@ export default function Footer() {
                         <ul className="space-y-2 text-sm text-cyan-100/80">
                             <li>Solar Heights, Sector 62, Noida, India</li>
                             <li>+91 9123255388</li>
-                            <li>contact@excelenergy.in</li>
+                            <li>contact@axelenergy.in</li>
                         </ul>
                     </div>
                 </div>
@@ -88,7 +88,7 @@ export default function Footer() {
             </div>
 
             <div className="relative z-10 border-t border-white/10 py-6 text-center text-xs uppercase tracking-[0.35em] text-cyan-100/60">
-                © {year} Excel Energy · Liquid Solar Experience · Designed with ☀️ by Adil
+                © {year} Axel Energy · Liquid Solar Experience · Designed with ☀️ by Adil
             </div>
         </footer>
     );

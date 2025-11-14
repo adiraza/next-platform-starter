@@ -1,10 +1,10 @@
-# Complete Admin Panel - Excel Energy
+# Complete Admin Panel - Axel Energy
 
 ## ✅ All Changes Completed
 
 ### 1. **Branding Updated**
 - ✅ Removed "Dasher" branding
-- ✅ Replaced with "Excel Energy" logo and name
+- ✅ Replaced with "Axel Energy" logo and name
 - ✅ Uses same Droplet icon as website
 - ✅ Consistent branding throughout admin panel
 

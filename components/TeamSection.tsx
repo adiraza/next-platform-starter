@@ -115,7 +115,7 @@ export default function TeamSection() {
                         Our Illuminated Team
                     </h1>
                     <p className="liquid-subheading text-lg md:text-xl max-w-3xl mx-auto">
-                        Meet the visionaries and engineers who orchestrate Excel Energy's liquid solar experiences across India.
+                        Meet the visionaries and engineers who orchestrate Axel Energy's liquid solar experiences across India.
                     </p>
                 </motion.div>
 

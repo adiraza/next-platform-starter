@@ -7,7 +7,7 @@
 - **Solution**: Updated password hash to correct bcrypt hash
 - **File**: `lib/auth.ts`
 - **Status**: ✅ Fixed - Now you can login with:
-  - Username: `admin` or `admin@excelenergy.in`
+  - Username: `admin` or `admin@axelenergy.in`
   - Password: `admin123`
 
 ### 2. Admin Panel UI Redesigned

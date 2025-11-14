@@ -58,7 +58,7 @@ export default function AboutUsSection() {
                 contactInfo: {
                     address: "Solar Heights, Sector 62, Noida, UP, India",
                     phone: "+91 9876543210",
-                    email: "info@excelenergy.in"
+                    email: "info@axelenergy.in"
                 }
             });
         } finally {
@@ -85,7 +85,7 @@ export default function AboutUsSection() {
                     transition={{ duration: 0.6 }}
                     className="text-center space-y-5"
                 >
-                    <span className="liquid-badge">About Excel Energy</span>
+                    <span className="liquid-badge">About Axel Energy</span>
                     <h2 className="liquid-heading text-4xl sm:text-5xl font-bold">
                         Liquid-Smooth Solar Transformation
                     </h2>

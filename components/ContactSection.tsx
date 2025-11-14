@@ -59,7 +59,7 @@ export default function ContactSection() {
         {
             icon: Mail,
             title: "Email",
-            details: ["info@excelenergy.in", "contact@excelenergy.in", "support@excelenergy.in"],
+            details: ["info@axelenergy.in", "contact@axelenergy.in", "support@axelenergy.in"],
             color: "from-yellow-400 to-yellow-600"
         },
         {
@@ -258,7 +258,7 @@ export default function ContactSection() {
                                 Call Us Now
                             </a>
                             <a
-                                href="mailto:info@excelenergy.in"
+                                href="mailto:info@axelenergy.in"
                                 className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-8 py-4 font-bold text-white transition hover:bg-white/20"
                             >
                                 <Mail className="h-5 w-5" />
