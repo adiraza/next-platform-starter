@@ -39,7 +39,7 @@ export default function AdminLogin() {
     };
 
     return (
-        <div className="min-h-screen liquid-section flex items-center justify-center p-4 relative overflow-hidden">
+        <div className="min-h-screen bg-slate-950 flex items-center justify-center p-4 relative overflow-hidden">
             {/* Liquid Background Effects */}
             <div className="absolute inset-0">
                 <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[60rem] h-[60rem] bg-gradient-to-br from-sky-500/20 via-blue-400/30 to-cyan-400/10 blur-3xl opacity-70 animate-pulse" />

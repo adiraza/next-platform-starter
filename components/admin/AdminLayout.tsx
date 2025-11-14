@@ -128,7 +128,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
               </div>
               <div className="flex flex-col">
                 <span className="font-bold text-lg leading-tight text-slate-900 dark:text-white">
-                  Excel<span className="text-yellow-400">Energy</span>
+                  Axel <span className="text-yellow-400">Energy</span>
                 </span>
                 <span className="text-xs text-slate-500 dark:text-cyan-400">Admin Panel</span>
               </div>
